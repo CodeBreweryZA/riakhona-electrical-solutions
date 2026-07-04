@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riakhona Electrical Solutions | Professional Electrical Services</title>
+<meta name="description" content="Riakhona Electrical Solutions - Professional electrical installation, maintenance, and repair services for residential and commercial clients.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:#333}
+:root{--primary:#f5a623;--primary-dark:#d4891a;--dark:#1a1a2e;--text-light:#f8f9fa;--shadow:0 2px 15px rgba(0,0,0,0.1)}
+header{background:var(--dark);color:#fff;padding:20px 0;position:sticky;top:0;z-index:100}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo i{font-size:2rem;color:var(--primary)}
+.logo h1{font-size:1.5rem;font-weight:700}
+.logo span{color:var(--primary)}
+nav a{color:#fff;text-decoration:none;padding:8px 16px;border-radius:5px;transition:.3s;font-weight:500}
+nav a:hover{background:var(--primary);color:var(--dark)}
+.hero{background:linear-gradient(135deg,var(--dark) 0%,#16213e 100%);color:#fff;padding:100px 0;text-align:center}
+.hero h2{font-size:2.8rem;margin-bottom:15px}
+.hero h2 span{color:var(--primary)}
+.hero p{font-size:1.2rem;max-width:700px;margin:0 auto 30px;opacity:.9}
+.btn{display:inline-block;padding:14px 32px;border-radius:50px;text-decoration:none;font-weight:600;transition:.3s;border:none;cursor:pointer}
+.btn-primary{background:var(--primary);color:var(--dark)}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-3px)}
+.btn-outline{border:2px solid #fff;color:#fff;background:transparent}
+.btn-outline:hover{background:#fff;color:var(--dark)}
+.section{padding:80px 0}
+.section-title{text-align:center;font-size:2rem;margin-bottom:50px;position:relative}
+.section-title:after{content:'';display:block;width:60px;height:4px;background:var(--primary);margin:10px auto}
+.section.light{background:#f8f9fa}
+.about-grid,.services-grid,.contact-grid{display:grid;gap:40px}
+.about-grid{grid-template-columns:1fr 1fr;align-items:center}
+.about-img{width:100%;border-radius:10px;box-shadow:var(--shadow)}
+.about-content h3{font-size:1.5rem;margin-bottom:15px;color:var(--dark)}
+.about-content p{color:#666;margin-bottom:15px}
+.about-content ul{list-style:none;padding:0}
+.about-content ul li{padding:8px 0;border-bottom:1px solid #eee}
+.about-content ul li:before{content:'\f00c';font-family:'Font Awesome 6 Free';font-weight:900;color:var(--primary);margin-right:10px}
+.services-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.service-card{background:#fff;padding:30px;border-radius:10px;box-shadow:var(--shadow);text-align:center;transition:.3s}
+.service-card:hover{transform:translateY(-10px)}
+.service-card i{font-size:3rem;color:var(--primary);margin-bottom:20px}
+.service-card h3{margin-bottom:15px}
+.service-card p{color:#666}
+.service-img{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:15px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.gallery-grid img{width:100%;height:200px;object-fit:cover;border-radius:8px;transition:.3s;cursor:pointer}
+.gallery-grid img:hover{transform:scale(1.05);box-shadow:var(--shadow)}
+.contact-grid{grid-template-columns:1fr 1fr}
+.contact-info i{width:25px;color:var(--primary);margin-right:10px}
+.contact-info p{margin-bottom:15px;font-size:1.05rem}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ddd;border-radius:5px;font-family:inherit;font-size:1rem}
+.contact-form textarea{height:120px;resize:vertical}
+footer{background:var(--dark);color:#fff;padding:40px 0;text-align:center}
+footer a{color:var(--primary);text-decoration:none}
+footer .social{margin:20px 0}
+footer .social a{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border-radius:50%;margin:0 8px;color:#fff;transition:.3s}
+footer .social a:hover{background:var(--primary);color:var(--dark)}
+@media(max-width:768px){
+  .hero h2{font-size:2rem}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  nav a{padding:6px 10px;font-size:.9rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container header-inner">
+<div class="logo">
+<i class="fas fa-bolt"></i>
+<h1>Riakhona <span>Electrical</span></h1>
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<section id="home" class="hero">
+<div class="container">
+<h2>Reliable <span>Electrical</span> Solutions</h2>
+<p>Professional electrical installation, maintenance, and repair services for residential and commercial clients. Safety and quality guaranteed.</p>
+<a href="#contact" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Get a Quote</a>
+<a href="#services" class="btn btn-outline">Our Services</a>
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container">
+<h2 class="section-title">About Us</h2>
+<div class="about-grid">
+<img src="pic1.jpg" alt="Riakhona Electrical Solutions team at work" class="about-img">
+<div class="about-content">
+<h3>Trusted Electrical Experts</h3>
+<p>Riakhona Electrical Solutions is a premier electrical services provider dedicated to delivering safe, reliable, and high-quality electrical work. With years of industry experience, we serve both residential and commercial clients with professionalism and integrity.</p>
+<p>Our team of certified electricians stays up-to-date with the latest technologies and safety standards to ensure every project meets the highest quality benchmarks.</p>
+<ul>
+<li>Fully licensed and insured</li>
+<li>24/7 emergency service available</li>
+<li>Free quotations and consultations</li>
+<li>Satisfaction guaranteed on every job</li>
+<li>Competitive pricing with transparent quotes</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section light" id="services">
+<div class="container">
+<h2 class="section-title">Our Services</h2>
+<div class="services-grid">
+<div class="service-card">
+<i class="fas fa-home"></i>
+<img src="pic2.jpg" alt="Residential electrical services" class="service-img">
+<h3>Residential Electrical</h3>
+<p>Complete home electrical solutions including wiring, lighting installation, panel upgrades, and safety inspections for your peace of mind.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-building"></i>
+<img src="pic3.jpg" alt="Commercial electrical services" class="service-img">
+<h3>Commercial Electrical</h3>
+<p>Comprehensive electrical services for businesses, offices, and industrial facilities including installations, maintenance, and emergency repairs.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-tools"></i>
+<img src="pic4.jpg" alt="Electrical maintenance and repairs" class="service-img">
+<h3>Maintenance & Repairs</h3>
+<p>Prompt and reliable electrical repair services, routine maintenance programs, fault finding, and troubleshooting for all electrical systems.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<div class="container">
+<h2 class="section-title">Our Work</h2>
+<div class="gallery-grid">
+<img src="pic1.jpg" alt="Electrical project 1">
+<img src="pic2.jpg" alt="Electrical project 2">
+<img src="pic3.jpg" alt="Electrical project 3">
+<img src="pic4.jpg" alt="Electrical project 4">
+</div>
+</div>
+</section>
+
+<section class="section light" id="contact">
+<div class="container">
+<h2 class="section-title">Contact Us</h2>
+<div class="contact-grid">
+<div class="contact-info">
+<h3 style="margin-bottom:20px">Get In Touch</h3>
+<p><i class="fas fa-map-marker-alt"></i> Pretoria, Gauteng, South Africa</p>
+<p><i class="fas fa-phone-alt"></i> 068 235 7541</p>
+<p><i class="fas fa-envelope"></i> info@riakhonaelectrical.co.za</p>
+<p><i class="fas fa-clock"></i> Mon–Fri: 07:00–17:00 | Sat: 08:00–13:00</p>
+<p><i class="fas fa-shield-alt"></i> Emergency services available 24/7</p>
+</div>
+<form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! We will contact you shortly.');this.reset();">
+<h3 style="margin-bottom:20px">Request a Quote</h3>
+<input type="text" placeholder="Your Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number" required>
+<select required>
+<option value="">Select Service</option>
+<option>Residential Electrical</option>
+<option>Commercial Electrical</option>
+<option>Maintenance & Repairs</option>
+<option>Emergency Service</option>
+<option>Other</option>
+</select>
+<textarea placeholder="Describe your electrical needs..." required></textarea>
+<button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="logo" style="justify-content:center;margin-bottom:15px">
+<i class="fas fa-bolt"></i>
+<h1 style="font-size:1.3rem">Riakhona <span>Electrical</span> Solutions</h1>
+</div>
+<p>Powering your world with safety and excellence</p>
+<div class="social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+<p style="margin-top:20px;opacity:.7">&copy; 2026 Riakhona Electrical Solutions. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
